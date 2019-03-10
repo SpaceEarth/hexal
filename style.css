@@ -1,0 +1,390 @@
+@font-face {
+    font-family: MavenProRegular;
+    src: url("./assets/fonts/MavenPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+body {
+    min-width: 1000px;
+}
+
+/* header */
+header {
+    background: rgb(50, 50, 50);
+    height: 63px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    width: 0;
+	height: 0;
+	border-left: 44px solid transparent;
+    border-right: 44px solid transparent;
+    border-top: 26px solid rgb(50, 50, 50);
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    list-style-type: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-49.5%);
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 7.21379pt;
+}
+
+header nav ul li span {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+header nav ul li:nth-child(4) {
+    margin-left: 34px;
+    margin-right: 35px;
+}
+
+header nav ul li img{
+    position: relative;
+    top: 25px;
+}
+
+header nav ul li span {
+    color: #484c5f;
+}
+
+header nav ul li a {
+    color: rgba(255, 255, 255, 255);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: rgba(9, 245, 127, 0.734);
+    text-decoration: underline;
+    font-size: 110%;
+}
+
+.current-link {
+    color: #2eb398;
+}
+
+/* section 1 */
+
+.hexagon-container {
+    height: 720px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.hexagon {
+    width: 180px;
+    height: 210px;
+    margin: 8px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hex-layer-1 {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #ccc3;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.row-1 {
+    position: relative;
+    top: 80px;
+    left: 100px;
+    /* border-left: 1px solid grey; */
+    /* margin-left: -3px; */
+}
+
+.row-2 {    
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.row-3 {  
+    position: relative;
+    top: -40px;
+    left: 100px;
+}
+
+.pic-1 {
+    background-image: url("./assets/images/1.png");
+}
+
+.pic-2 {
+    background-image: url("./assets/images/2.png");
+}
+
+.pic-3 {
+    background-image: url("./assets/images/3.png");
+}
+
+.pic-4 {
+    background-image: url("./assets/images/4.png");
+}
+
+.pic-5 {
+    background-image: url("./assets/images/5.png");
+}
+
+.pic-6 {
+    background-image: url("./assets/images/6.png");
+}
+
+.pic-7 {
+    background-image: url("./assets/images/7.png");
+}
+
+.pic-8 {
+    background-image: url("./assets/images/8.png");
+}
+
+.pic-9 {
+    background-image: url("./assets/images/9.png");
+}
+
+.pic-10 {
+    background-image: url("./assets/images/10.png");
+}
+
+.pic-11 {
+    background-image: url("./assets/images/11.png");
+}
+
+.pic-12 {
+    background-image: url("./assets/images/12.png");
+}
+
+.pic-13 {
+    background-image: url("./assets/images/13.png");
+}
+
+
+
+/* section 2 */
+.info {
+    height: 340px;
+    background: #2eb398;
+}
+
+.author {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.author-img,
+.author-info {
+    display: inline-block;
+}
+
+.author-img {    
+    margin-top: 60px;
+    margin-left: 12px;
+}
+
+.author-info {
+    vertical-align: top;
+    width: 583px;
+    margin-top: 65px;
+    margin-left: 5px;
+}
+
+.author-info-text h1 {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 22.5pt;
+    color: rgba(215, 252, 245, 255);
+}
+
+.author-info-text h2 {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(32, 129, 109, 255);
+}
+
+.author-info-text p {    
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8pt;
+    color: rgba(215, 252, 245, 255);
+    margin-top: 17px;
+    line-height: 2.0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.pic-author {
+    background-image: url("./assets/images/author.png");
+}
+
+.social {    
+    text-align: right;
+    margin-top: 35px;
+    /* background-image: linear-gradient(green, yellow); */
+    /* mask-image: linear-gradient(to bottom, transparent 25%, black 75%); */
+}
+
+.social img {
+    margin-left: -4px;
+    /* filter: opacity(0.5) drop-shadow(0 0 0 blue); */
+    filter: opacity(0.3);
+    /* box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); */
+}
+
+.form {
+    height: 560px;
+    background-color: #323232;
+}
+
+.form-container {
+    width: 780px;
+    margin: 0 auto;
+}
+
+.form-in-touch,
+.contacts {
+    display: inline-block;
+}
+
+.form-in-touch {
+    width: 580px;
+}
+
+.contacts {
+    width: 180px;
+    vertical-align: top;
+    margin-top: 130px;
+    margin-left: 15px;
+}
+
+.contacts p {
+    font-family: Lato-Black, Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9.7pt;
+    color: rgba(224, 224, 224, 255);
+    line-height: 1.7;
+}
+
+.form-in-touch {
+    margin-top: 65px;
+}
+
+.get-in-touch {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 22pt;
+    color: rgba(224, 224, 224, 255);
+}
+
+.get-in-touch-use {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 13pt;
+    color: rgba(190, 190, 190, 255);
+}
+
+.form-in-touch legend {
+    margin-bottom: 25px;
+}
+
+input, textarea {
+    background-color: #454545;
+    color: white;
+    margin-bottom: 20px;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9pt;
+    color: rgba(190, 190, 190, 255);
+    border: none;
+}
+
+input {
+    width: 570px;
+    padding: 10px 0 10px 15px;   
+}
+
+textarea {
+    width: 565px;
+    height: 125px;
+    padding-top: 10px;
+    padding-left: 15px; 
+}
+
+.form-in-touch form {
+    position: relative;
+}
+
+button {
+    height: 35px;
+    width: 90px;
+    background-color: #2eb398;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+}
+
+.contacts p {
+    display: inline-block;
+}
+
+.contacts-location {
+    margin-top: 40px;
+    margin-left: 3px;
+}
+
+.contacts img {
+    margin-right: 10px;
+}
+
+footer {
+    height: 40px;
+    background-color: #222222;
+    padding-top: 20px;
+    padding-left: 4%;
+}
+
+footer p {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 8.65655pt;
+    color: rgba(69, 69, 69, 255);
+}
+
+.author {
+    border-left: 1px solid rgb(121, 208, 174);
+    border-right: 1px solid rgb(121, 208, 174);
+}
+
+.contacts a {
+    /* color: white; */
+    text-decoration: none;
+    font-family: Lato-Black, Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 9.7pt;
+    color: rgba(224, 224, 224, 255);
+}
